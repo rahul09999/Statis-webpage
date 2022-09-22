@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%
+}
+body {
+  font-family: "K2D", sans-serif;
+}
+:root {
+  --primary: #fff031;
+  --secondary: #fff5f5;
+}
+
+section .content {
+    width: 80%;
+    margin: 4rem auto;
+    font-family: "Poppins", sans-serif;
+  }
+  section .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.5rem;
+  }
+  section .title span {
+    color: var(--secondary);
+    font-size: 3.6rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.8rem;
+  }
+  section .title span::before,
+  section .title span::after {
+    content: "";
+    position: absolute;
+    height: 0.3rem;
+    width: 100%;
+    background: var(--primary);
+    left: 0;
+    bottom: 0;
+  }
+  section .title span::after {
+    bottom: -0.7rem;
+    width: 70%;
+    left: 5rem;
+    transform: translate(-50%);
+  }
+  section .text {
+    font-size: 2.1rem;
+    color: var(--secondary);
+    text-align: center;
+    margin-top: -2.5rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .about {
+    background: #1d1d1d;
+    padding-top: 7.2rem;
+    padding-bottom: 3.2rem;
+  }
+  .about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about-details .left {
+    width: 45%;
+    cursor: pointer;
+  }
+  .about-details .left img {
+    height: 41rem;
+    width: 41rem;
+    object-fit: cover;
+    border-right: 1.2rem;
+    margin-bottom: 3.6rem;
+  }
+  .about-details .right {
+    width: 55%;
+  }
+  .about-details .right .topic {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  .about-details .right .topic span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .about-details .right p {
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--secondary);
+    line-height: 1.6;
+    margin-top: 2.5rem;
+  }
+  .about-details .media-icons a img {
+    width: 7%;
+    background-color: #111122;
+    border-radius: 45%;
+    margin-top: 1.6rem;
+    transition: all .3s ease;
+  }
+  .about-details .media-icons a img:hover {
+    background: #3DCFD3;
+  }
